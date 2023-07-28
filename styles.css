@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+  
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    margin: 200px auto;
+    max-width: 450px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #0d8dc9;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.753);
+}
+
+.titulo{
+    padding: 2px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contenedor_cuenta {
+    font-size: 24px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    align-items: centar;
+}
+
+select{
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 10px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+#password{
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#btn_ingresar{
+    margin: 10px 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#saldo{
+    font-size: 16px;
+    border-radius: 5px;
+    width: 250px;
+    padding: 2px;
+    margin: 5px 5px;
+}
+  
+.btn_mod{
+    font-size: 16px;
+    margin: 10px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

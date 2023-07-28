@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <title>Proyeto Cajero Automatico</title>
+</head>
+<body>
+  <div class="contenedor">
+    <h1 class="titulo">Cajero Automático</h1>
+      <div id="contenedor_cuenta" class="contenedor_cuenta" style="display: block;">
+        <label for="cuentas">Selecciona una cuenta:</label>
+        <select id="cuentas">
+          <option value="1">Usuario 1</option>
+          <option value="2">Usuario 2</option>
+          <option value="3">Usuario 3</option>
+        </select>
+        <input type="password" id="password" placeholder="Ingresar Contraseña">
+        <button id="btn_ingresar" onclick="ingresar()">Ingresar</button>
+      </div>
+      <div class="contenedor_cuenta_2" id="pantallaCuenta" style="display: none;">
+        <h2 id="nombreCuenta"></h2>
+        <p id="saldoCuenta"></p> 
+        <label for="saldo">Monto:</label>
+        <input type="number" id="saldo" min="10" max="990" step="10" placeholder="Ingresa el monto">
+        <button class="btn_mod" onclick="consultarSaldo()">Consultar saldo</button>
+        <button class="btn_mod" onclick="depositarDinero()">Depositar</button>
+        <button class="btn_mod" onclick="retirarDinero()">Retirar</button>
+        <button class="btn_mod" onclick="cerrarSesion()">Salir</button>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
